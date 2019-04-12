@@ -1,0 +1,13 @@
+{
+  "name": "SnapTime",
+  "short_name": "SnapTime",
+  "lang": "en-US",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/_img/snaptime_logo.png",
+      "sizes": "405x88",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    font-family: 'NeoSansRegular', Helvetica, Tahoma;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url("/_img/snaptime_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+}
+
+/* ---------- Fonts ------------- */
+
+@font-face {
+	font-family: 'NeoSansRegular';
+    src: url('/_fonts/neosans-webfont.eot');
+    src: url('/_fonts/neosans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/_fonts/neosans-webfont.svg#neosansregular') format('svg'),
+		 url('/_fonts/neosans-webfont.woff') format('woff'),
+         url('/_fonts/neosans-webfont.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeoSansBold';
+    src: url('/_fonts/neosans_bold-webfont.eot');
+    src: url('/_fonts/neosans_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/_fonts/neosans_bold-webfont.svg#neosansbold') format('svg'),
+		 url('/_fonts/neosans_bold-webfont.woff') format('woff'),
+         url('/_fonts/neosans_bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
+/* --------- Buttons --------------- */
+
+
+button {
+    font-family: 'NeoSansRegular', Tahoma, Helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 32px;
+	text-transform: uppercase;
+	background:rgba(0,0,0,0);
+	padding:0 20px; height:38px; border-radius: 19px;
+	cursor:pointer;
+	transition: all .3s ease-in-out;
+	position: relative;
+	z-index:1;
+	display:inline-block;
+    color:#fff;
+    border:2px solid #fff;
+}
+
+button:hover{
+    color: #1d1350;
+    background: #fff;
+}
+
+button.form-btn {
+    font-size: 16px;
+	font-weight: bold;
+	line-height: 32px;
+	text-transform: uppercase;
+    padding:0 20px;
+    cursor:pointer;
+    display:inline-block;
+}
+
+
+button#form-btn-login {
+    margin-top: 20px;
+
+}
+
+.select2-selection__clear {
+    display: none;
+}
+
+button.ui-datepicker-clear {
+    display: none;
+}
+
+a#ieClose{
+    float:right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+a#ieClose.boxclose {
+    cursor:pointer;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 2px;
+    padding: 14px 8px;
+}
+
+.boxclose:before {
+    content: "×";
+}
+
+/* ---------Timereg form ------------  */
+span.select2 {
+    background-color: white;
+}
+
+form#timemanage-form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-bottom: 10px;
+}
+
+span.select2.error, form#timemanage-form > input.error, form#timemanage-form > select.error{
+	border: 2px solid red;
+}
+
+input.valid {
+    background-image: url('/_img/icons-checkmark-64.png');
+    background-position: 98% 50%;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+input#form-hours.valid, input#form-hours-billed.valid {
+    background-size: 15px 15px;
+    background-position: 100% 0%;
+}
+
+span.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 28px;
+}
+
+span.select2, #project-select, #customer-select, #form-datepicker, #form-description, #form-hours, #form-hours-billed {
+    /* background:#fff; */
+    border:1px solid rgba(0,0,0,.05);
+    border-radius: 5px;
+    width: 65%;
+    height: 40px;
+    font-size:16px;
+    box-shadow: 0px 3px 0px 0px rgba(255, 255, 255, 1.0);
+    margin:0 0 12px 0;
+    box-sizing: border-box;
+    padding:5px 12px 0 12px;
+    display: inline-block;
+    overflow:hidden;
+}
+
+label {
+    width: 13%;
+    min-width: 100px;
+    color: #fff;
+}
+
+form#timemanage-form label {
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px 0px 6px 5px;
+}
+
+form#timemanage-form label.hour-labels {
+    display: inline-block;
+}
+
+input#form-hours, input#form-hours-billed{
+    width: 100px;
+    display: inline-block;
+}
+
+span.select2 .select2-selection {
+    border: none;
+}
+
+span.select2-selection.select2-selection--single {
+    outline: none;
+}
+
+span.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 6px;
+}
+
+span#newCustomer, span#newProject {
+    width: auto;
+    color: silver;
+    font-size: 16px;
+    display: inline-block;
+}
+
+div.info-box {
+    height: 24px;
+    width: 100%;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+#form-datepicker::-ms-clear {
+
+}
+
+div.submit-container {
+    text-align: center;
+}
+
+/* Toast */
+.toast_window {
+    position:absolute;
+    width:100%;
+    background: #096cb8;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    padding:12px;
+    text-align: center;
+    z-index:999;
+    top:0;
+    border-bottom:3px solid rgba(0,0,0,0.1);
+}
+
+.toast_window ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.toast_window ul li {
+    text-align: center;
+}
+
+/* Success window */
+
+.success-window {
+    display: none;
+    position:absolute;
+    width:100%;
+    background: #dff0d8;
+    color:#3c763d;
+    font-size:14px;
+    font-weight:700;
+    padding:12px;
+    text-align:center;
+    z-index:999;
+    top:0;
+    border-bottom:3px solid rgba(0,0,0,0.1);
+}
+
+/* Error window */
+
+.error-window {
+    display: none;
+    position:absolute;
+    width:100%;
+    background: #096cb8;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    padding:12px;
+    text-align:center;
+    z-index:999;
+    top:0;
+    border-bottom:3px solid rgba(0,0,0,0.1);
+}
+
+/* --------- Login Form ------------*/
+
+div.login-form-container{
+    padding-bottom: 60px;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+form#login-form {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+form#login-form input {
+    display: block;
+    border:1px solid rgba(0,0,0,.05);
+    border-radius: 5px;
+    width:100%;
+    height:40px;
+    font-size:16px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.15);
+    margin:0 0 16px 0;
+    box-sizing: border-box;
+    padding:5px 12px 0 12px;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: 8%;
+    margin-top: 8%;
+    max-width: 405px;
+}
+
+a.logo {
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo {font-size:25px; line-height:30px; letter-spacing:-1px; margin-top:24px; font-weight: normal; color:#fff; display:block; transition: all .3s ease-in-out; }
+.logo>.regular, .logo>.super {font-family: 'NeoSansRegular', sans-serif; font-weight: normal;  }
+.logo>.bold {font-family: 'NeoSansBold', sans-serif; font-weight: normal;  }
+.logo>.super {font-size:20px; letter-spacing:-3px; vertical-align: super; font-weight: normal;  }
+
+@media only screen and (min-width: 768px) {
+    img {
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+}
