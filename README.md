@@ -45,3 +45,9 @@ Every field is validated live and marked with a green icon if the input is valid
 If all fields are filled in correctly, a creation of the registration is now possible,
 and the employee can click the save button at the bottom.
 
+
+### Comments
+This project was created for a buisness for use internally.
+Security is a consern in this project and for that reason all database information has been removed from the code contained in this repository.
+This means that the project can not be downloaded and displayed live, this is merely for demonstration of work done.
+
