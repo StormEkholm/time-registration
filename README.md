@@ -14,9 +14,7 @@ After logging in this ui is accessible and the user can now start a time registr
 
 ### Field Breakdown
 
-![Snaptime info](https://user-images.githubusercontent.com/28634497/59848749-3d8b5700-9366-11e9-8407-afed6166f4bb.png)
-
-1st field: A selection field used for determining which customer the work was done for, the options is pulled from the customer table in the database.
+1st Field: A selection field used for determining which customer the work was done for, the options is pulled from the customer table in the database.
 
 When marking the field a dropdown of options is displayed, this contains a search field where the user can input the customer name.
 If the customer does not already exist the name can be completed and a option with that name can be selected.
@@ -25,9 +23,23 @@ The form will now display that the new customer will be created on submit.
 
 ![Snaptime kunde](https://user-images.githubusercontent.com/28634497/59848774-4d0aa000-9366-11e9-9788-bda144505aee.png)
 
-2nd field: Now that the user has selected a customer, this field will display options with the currently running projects under that customer.
+2nd Field: Now that the user has selected a customer, this field will display options with the currently running projects under that customer.
 This field works in the same way as the customer example regarding creation of new projects.
 
 ![Snaptime projekt](https://user-images.githubusercontent.com/28634497/59848817-61e73380-9366-11e9-81e5-ef0b40e21153.png)
+
+3rd Field: A simple JQuery datepicker, mark the field and select the date on which the work was done.
+
+4th Field: This is for writing a short description of the work done.
+
+5th Field: Input field for the actual amount of hours used on the work, this is used for statics internally.
+
+6th Field: Input field for the amount of hours the client should be billed for work done.
+
+![Snaptime info](https://user-images.githubusercontent.com/28634497/59848749-3d8b5700-9366-11e9-8407-afed6166f4bb.png)
+
+### Validation
+
+Every field is validated live and marked with a green icon if the input is valid, otherwise the field/s with invalid input is marked with a red border and a red icon containing an x.
 
 
