@@ -3,7 +3,7 @@ App for work hour management on projects
 
 ### Login UI
 Initial landing platform, this is for logging in and assigning a session,
-which is used for determaning which employee is making the time registration.
+which is used for determining which employee is making the time registration.
 
 
 ![Snaptime login](https://user-images.githubusercontent.com/28634497/59848793-57c53500-9366-11e9-8ced-3a85a3831c93.png)
