@@ -42,4 +42,6 @@ This field works in the same way as the customer example regarding creation of n
 
 Every field is validated live and marked with a green icon if the input is valid, otherwise the field/s with invalid input is marked with a red border and a red icon containing an x.
 
+If all fields are filled in correctly, a creation of the registration is now possible,
+and the employee can click the save button at the bottom.
 
