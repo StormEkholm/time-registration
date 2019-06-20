@@ -5,10 +5,12 @@ App for work hour management on projects
 Initial landing platform, this is for logging in and assigning a session,
 which is used for determaning which employee is making the time registration.
 
+
 ![Snaptime login](https://user-images.githubusercontent.com/28634497/59848793-57c53500-9366-11e9-8ced-3a85a3831c93.png)
 
 ### Form UI
 After logging in this ui is accessible and the user can now start a time registration.
+
 
 ![Snaptime timereg form](https://user-images.githubusercontent.com/28634497/59848869-7fb49880-9366-11e9-9076-5f3962b2cbe6.png)
 
